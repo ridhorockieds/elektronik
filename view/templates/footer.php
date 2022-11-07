@@ -1,6 +1,6 @@
 <!-- Main Footer -->
 <footer class="main-footer">
-    <strong>Copyright &copy; 2022 Toko Elektronik.</strong> All rights reserved.
+    <strong>Copyleft &reg; 2022 Toko Elektronik.</strong> All rights reserved.
 </footer>
 </div>
 
@@ -17,7 +17,7 @@
 <!-- AdminLTE App -->
 <script src="../../assets/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
-<!-- <script src="../../assets/js/demo.js"></script> -->
+<script src="../../assets/js/demo.js"></script>
 
 <script>
     $(function() {

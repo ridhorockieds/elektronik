@@ -100,7 +100,7 @@
                                                                     </div>
                                                                 </div>
                                                                 <!-- /.card-body -->
-                                                                <div class="card-footer float-right">
+                                                                <div class="float-right">
                                                                     <button type="submit" class="btn btn-success">Simpan</button>
                                                                 </div>
                                                             <?php } ?>
@@ -174,7 +174,7 @@
                             </div>
                         </div>
                         <!-- /.card-body -->
-                        <div class="card-footer float-right">
+                        <div class="float-right">
                             <button type="submit" class="btn btn-success">Tambah</button>
                         </div>
                     </form>

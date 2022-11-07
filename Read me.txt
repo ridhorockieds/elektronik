@@ -1,4 +1,4 @@
-#####   Aplikasi Toko Elektronik dengan PHP Native dan MySQL   #####
+#########   Aplikasi Toko Elektronik dengan PHP Native dan MySQL   #########
 
 <---------------------------------------------------------------------------->
 Info :
@@ -6,19 +6,30 @@ CRUD pada Admin sukses, CRUD pada Staff masih pengembangan lebih lanjut.
 
 
 <---------------------------------------------------------------------------->
-Folder assets berisi file aset seperti css, js dan img.
-Folder Config berisi koneksi ke database MySQL.
-Folder db berisi query/file sql beserta record.
-Folder plugins berisi aset framework/template AdminLTE v3(Bootstrap).
-Folder view berisi file tampilan pada web
+=============    Folder    =============
+Folder /assets berisi file aset seperti css, js dan img.
+Folder /Config berisi koneksi ke database MySQL.
+Folder /db berisi query/file sql beserta record.
+Folder /plugins berisi aset framework/template AdminLTE v3(Bootstrap).
+Folder /view berisi file tampilan pada web
 
 
 <---------------------------------------------------------------------------->
+!!!!!!!!!!    PENTING    !!!!!!!!!!
+Langkah Import tabel harus sesuai urutan berikut :
+1. buat database "elektronik"
+2. Import datbase "elektronik.sql"
+
+
+<---------------------------------------------------------------------------->
+=============    Koneksi PHP >< MySQL    =============
 Koneksi ke database :
 $host = "localhost";
 $user = "root";
 $pass = "";
 $db = "elektronik";
+
+!! user dan pass tentukan sesuai user & pass database masing-masing !!
 
 
 <---------------------------------------------------------------------------->

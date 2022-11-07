@@ -111,8 +111,10 @@ $getNamaSuplier = $query;
                                                                     </div>
                                                                     <div class="form-group">
                                                                         <label for="harga">Harga</label>
-                                                                        <div class="input-group-prepend">
-                                                                            <span class="input-group-text">Rp.</span>
+                                                                        <div class="input-group">
+                                                                            <div class="input-group-prepend">
+                                                                                <span class="input-group-text">Rp.</span>
+                                                                            </div>
                                                                             <input type="text" name="harga" class="form-control" id="harga" value="<?= $row['harga']; ?>">
                                                                         </div>
                                                                     </div>
@@ -131,7 +133,7 @@ $getNamaSuplier = $query;
 
                                                                 </div>
                                                                 <!-- /.card-body -->
-                                                                <div class="card-footer float-right">
+                                                                <div class="float-right">
                                                                     <button type="submit" class="btn btn-success">Simpan</button>
                                                                 </div>
                                                             <?php } ?>
@@ -200,8 +202,16 @@ $getNamaSuplier = $query;
                             <div class="form-group">
                                 <label for="harga">Harga</label>
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text">Rp.</span>
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Rp.</span>
+                                    </div>
+                                    <!-- <input type="text" class="form-control"> -->
                                     <input type="text" name="harga" class="form-control" id="harga" placeholder="Harga">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">.00</span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -223,7 +233,7 @@ $getNamaSuplier = $query;
 
                         </div>
                         <!-- /.card-body -->
-                        <div class="card-footer float-right">
+                        <div class="float-right">
                             <button type="submit" class="btn btn-success">Tambah</button>
                         </div>
                     </form>
