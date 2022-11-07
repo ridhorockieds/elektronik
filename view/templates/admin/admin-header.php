@@ -7,9 +7,9 @@ if ($_SESSION['status'] != "login") {
 }
 
 include '../../config/Database.php';
-
-$getUser = mysqli_query($connection, "SELECT * FROM tb_user");
-$result = mysqli_fetch_assoc($getUser);
+$user = $_SESSION['username'];
+$getUser = mysqli_query($connection, "SELECT * FROM tb_user WHERE username = '$user'");
+$result = mysqli_fetch_array($getUser);
 ?>
 <!DOCTYPE html>
 <html>

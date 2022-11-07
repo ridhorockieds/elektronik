@@ -14,6 +14,7 @@ if ($check > 0) {
     $data = mysqli_fetch_assoc($user);
     if ($data['role'] == 'admin') {
         $_SESSION['username'] = $username;
+        // $_SESSION['nama_user'] = $check['nama_user'];
         $_SESSION['status'] = 'login';
         header('location:admin/admin.php');
     } elseif ($data['role'] == 'staff') {
