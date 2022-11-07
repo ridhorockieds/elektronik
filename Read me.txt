@@ -1,0 +1,33 @@
+#####   Aplikasi Toko Elektronik dengan PHP Native dan MySQL   #####
+
+<---------------------------------------------------------------------------->
+Info :
+CRUD pada Admin sukses, CRUD pada Staff masih pengembangan lebih lanjut.
+
+
+<---------------------------------------------------------------------------->
+Folder assets berisi file aset seperti css, js dan img.
+Folder Config berisi koneksi ke database MySQL.
+Folder db berisi query/file sql beserta record.
+Folder plugins berisi aset framework/template AdminLTE v3(Bootstrap).
+Folder view berisi file tampilan pada web
+
+
+<---------------------------------------------------------------------------->
+Koneksi ke database :
+$host = "localhost";
+$user = "root";
+$pass = "";
+$db = "elektronik";
+
+
+<---------------------------------------------------------------------------->
+Login Admin :
+Username = taufik
+Password = taufik123
+
+
+<---------------------------------------------------------------------------->
+Login Staff :
+Username = adam
+Password = adam123
