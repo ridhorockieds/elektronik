@@ -4,6 +4,8 @@
 <?php
 $getBarang = mysqli_query($connection, "SELECT * FROM tb_barang");
 $getSuplier = mysqli_query($connection, "SELECT * FROM tb_suplier");
+$getUser = mysqli_query($connection, "SELECT * FROM tb_user");
+
 
 $countBarang = mysqli_num_rows($getBarang);
 $countSuplier = mysqli_num_rows($getSuplier);
