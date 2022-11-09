@@ -61,8 +61,6 @@ $getNamaSuplier = $query;
                                     tb_suplier 
                                     ON 
                                     tb_barang.id_suplier = tb_suplier.id_suplier");
-                                    $getNamaSuplier = mysqli_query($connection, "SELECT * FROM tb_suplier");
-                                    $suplier = mysqli_fetch_array($getNamaSuplier);
                                     while ($value = mysqli_fetch_assoc($barang)) {
                                     ?>
                                         <tr>
