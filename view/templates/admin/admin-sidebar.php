@@ -34,10 +34,16 @@
                         <p>Master Barang</p>
                     </a>
                 </li>
-                <li class="nav-item user-panel pb-1">
+                <li class="nav-item">
                     <a href="master-user.php" class="nav-link">
                         <i class="nav-icon fas fa-user"></i>
                         <p>Master User</p>
+                    </a>
+                </li>
+                <li class="nav-item user-panel pb-1">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-shopping-cart"></i>
+                        <p>Penjualan</p>
                     </a>
                 </li>
             </ul>
