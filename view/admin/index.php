@@ -1,5 +1,5 @@
 <?php include '../templates/admin/admin-header.php' ?>
-<?php include '../templates/sidebar.php' ?>
+<?php include '../templates/admin/admin-sidebar.php' ?>
 
 <?php
 $getBarang = mysqli_query($connection, "SELECT * FROM tb_barang");

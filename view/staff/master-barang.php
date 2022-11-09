@@ -1,5 +1,5 @@
-<?php include '../templates/admin/admin-header.php' ?>
-<?php include '../templates/admin/admin-sidebar.php' ?>
+<?php include '../templates/staff/staff-header.php' ?>
+<?php include '../templates/staff/staff-sidebar.php' ?>
 
 <?php
 $query = mysqli_query($connection, "SELECT * FROM tb_suplier");

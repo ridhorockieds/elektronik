@@ -1,9 +1,20 @@
-#########   Aplikasi Toko Elektronik dengan PHP Native dan MySQL   #########
 
+###############           Aplikasi Toko Elektronik            ###############
 
 <---------------------------------------------------------------------------->
-Info :
-CRUD pada Admin sukses, CRUD pada Staff masih pengembangan lebih lanjut.
+=============    User Interface Sistem Toko Elektronik    =============
+
+#CRUD pada Admin terdapat 4 menu : 
+1. Dashboard,
+2. Master Suplier,
+3. Master Barang,
+4. Master User,
+
+#CRUD pada Staff terdapat 3 menu :
+1. Dashboard,
+2. Master Sistem,
+3. Master Barang,
+4. Penjualan (tahap pengembangan)
 
 
 <---------------------------------------------------------------------------->
@@ -23,12 +34,12 @@ Langkah Import tabel harus sesuai urutan berikut :
 
 
 <---------------------------------------------------------------------------->
-=============    Koneksi PHP >< MySQL    =============
+=============    Koneksi PHP <==> MySQL    =============
 Koneksi ke database :
 $host = "localhost";
 $user = "root";
 $pass = "";
-$db = "elektronik";
+$db   = "elektronik";
 
 !! user dan pass tentukan sesuai user & pass database masing-masing !!
 
@@ -38,8 +49,16 @@ Login Admin :
 Username = taufik
 Password = taufik123
 
+Username = tester
+Password = tester123
+
 
 <---------------------------------------------------------------------------->
 Login Staff :
 Username = adam
 Password = adam123
+
+
+<---------------------------------------------------------------------------->
+File .htaccess digunakan untuk membatasi akses masuk ke folder yang dibuka
+oleh orang lain maupun user sistem yang dapat menampilkan semua file.

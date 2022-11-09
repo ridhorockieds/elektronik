@@ -1,5 +1,5 @@
 <?php include '../templates/admin/admin-header.php' ?>
-<?php include '../templates/sidebar.php' ?>
+<?php include '../templates/admin/admin-sidebar.php' ?> required
 
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
@@ -82,20 +82,20 @@
                                                                     <div class="form-group">
                                                                         <label for="nama_suplier">Nama Suplier</label>
                                                                         <input type="text" class="d-none" name="id_suplier" value="<?= $value['id_suplier']; ?>">
-                                                                        <input type="text" name="nama_suplier" class="form-control" id="nama_suplier" value="<?= htmlspecialchars($row['nama_suplier']); ?>">
+                                                                        <input type="text" name="nama_suplier" class="form-control" id="nama_suplier" value="<?= htmlspecialchars($row['nama_suplier']); ?>" required>
                                                                     </div>
                                                                     <div class="form-group">
                                                                         <label for="alamat">Alamat</label>
-                                                                        <input type="text" name="alamat_suplier" class="form-control" id="alamat" value="<?= htmlspecialchars($row['alamat_suplier']); ?>">
+                                                                        <input type="text" name="alamat_suplier" class="form-control" id="alamat" value="<?= htmlspecialchars($row['alamat_suplier']); ?>" required>
                                                                     </div>
                                                                     <div class="form-group">
                                                                         <label for="no_telp">Telepon</label>
-                                                                        <input type="text" name="no_telp" class="form-control" id="no_telp" value="<?= $row['no_telp']; ?>">
+                                                                        <input type="text" name="no_telp" class="form-control" id="no_telp" value="<?= $row['no_telp']; ?>" required minlength="9" maxlength="14">
                                                                     </div>
                                                                     <div class="form-group">
                                                                         <label for="email">Email</label>
                                                                         <div class="input-group-prepend">
-                                                                            <input type="text" name="email" class="form-control" id="email" value="<?= $row['email']; ?>">
+                                                                            <input type="text" name="email" class="form-control" id="email" value="<?= $row['email']; ?>" required>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -156,20 +156,20 @@
                         <div class="card-body">
                             <div class="form-group">
                                 <label for="namasuplier">Nama Suplier</label>
-                                <input type="text" name="nama_suplier" class="form-control" id="namasuplier" placeholder="Nama Suplier">
+                                <input type="text" name="nama_suplier" class="form-control" id="namasuplier" placeholder="Nama Suplier" required>
                             </div>
                             <div class="form-group">
                                 <label for="alamat">Alamat</label>
-                                <input type="text" name="alamat_suplier" class="form-control" id="alamat" placeholder="Alamat">
+                                <input type="text" name="alamat_suplier" class="form-control" id="alamat" placeholder="Alamat" required>
                             </div>
                             <div class="form-group">
                                 <label for="telepon">Telepon</label>
-                                <input type="text" name="no_telp" class="form-control" id="telepon" placeholder="Telepon">
+                                <input type="text" name="no_telp" class="form-control" id="telepon" placeholder="Telepon" required minlength="9" maxlength="14">
                             </div>
                             <div class="form-group">
                                 <label for="email">Email</label>
                                 <div class="input-group-prepend">
-                                    <input type="email" name="email" class="form-control" id="email" placeholder="Email">
+                                    <input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
                                 </div>
                             </div>
                         </div>

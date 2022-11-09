@@ -4,8 +4,8 @@ session_start();
 
 if ($_SESSION['status'] != "login") {
     header("location:../../index.php?pesan=notlogin");
-} elseif ($_SESSION['role'] == 'staff') {
-    header("location:../staff/");
+} elseif ($_SESSION['role'] == 'admin') {
+    header("location:../admin/");
 }
 
 include '../../config/Database.php';
@@ -19,7 +19,7 @@ $result = mysqli_fetch_array($getUser);
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Admin | Toko Elektronik</title>
+    <title>Staff | Toko Elektronik</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -51,7 +51,7 @@ $result = mysqli_fetch_array($getUser);
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="../admin/" class="nav-link">Home</a>
+                    <a href="../staff/" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="#" class="nav-link">Contact</a>

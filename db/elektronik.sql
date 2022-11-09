@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 07, 2022 at 04:21 PM
+-- Generation Time: Nov 09, 2022 at 09:34 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.9
 
@@ -50,7 +50,8 @@ INSERT INTO `tb_barang` (`id_barang`, `kode_barang`, `nama_barang`, `stok`, `har
 (22, 'SAA001', 'Sharp Aquos Android TV 50\" 4K 4T-C50DK1i HDR', 4, '8050000.00', 6),
 (23, 'SAC001', 'Sharp AC 2pk AH-A18UCY Turbo Cool', 5, '67650000.00', 6),
 (24, 'SMGZ001', 'Samsung Galaxy Z-Flip 128GB', 11, '17500000.00', 5),
-(25, 'SMGZ003', 'Samsung Galaxy Z-Flip 256GB', 4, '21100000.00', 5);
+(25, 'SMGZ003', 'Samsung Galaxy Z-Flip 256GB', 4, '21100000.00', 5),
+(27, 'ACD001', 'Daikin AC 2pk', 4, '3900000.00', 7);
 
 -- --------------------------------------------------------
 
@@ -73,7 +74,8 @@ CREATE TABLE `tb_suplier` (
 INSERT INTO `tb_suplier` (`id_suplier`, `nama_suplier`, `alamat_suplier`, `no_telp`, `email`) VALUES
 (1, 'Polytron', 'Jl. Slamet Riyadi No. 408 Solo', '085321005100', 'cs@polytron.co.id'),
 (5, 'Samsung', 'Jl. Slamet Riyadi No. 123 Solo', '08000111888', 'cs@samsung.co.id'),
-(6, 'Sharp', 'Jl. Samanhudi No. 45 Surakarta', '081111000099', 'cs@sharp.co.id');
+(6, 'Sharp', 'Jl. Samanhudi No. 45 Surakarta', '081111000099', 'cs@sharp.co.id'),
+(7, 'Daikin', 'Jl. Ronggowarsito No. 132 Surakarta', '089995555500', 'cs@daikin.co.id');
 
 -- --------------------------------------------------------
 
@@ -129,13 +131,13 @@ ALTER TABLE `tb_user`
 -- AUTO_INCREMENT for table `tb_barang`
 --
 ALTER TABLE `tb_barang`
-  MODIFY `id_barang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id_barang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT for table `tb_suplier`
 --
 ALTER TABLE `tb_suplier`
-  MODIFY `id_suplier` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_suplier` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `tb_user`

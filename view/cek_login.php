@@ -14,13 +14,14 @@ if ($check > 0) {
     $data = mysqli_fetch_assoc($user);
     if ($data['role'] == 'admin') {
         $_SESSION['username'] = $username;
-        // $_SESSION['nama_user'] = $check['nama_user'];
+        $_SESSION['role'] = 'admin';
         $_SESSION['status'] = 'login';
-        header('location:admin/admin.php');
+        header('location:admin/');
     } elseif ($data['role'] == 'staff') {
         $_SESSION['username'] = $username;
+        $_SESSION['role'] = 'staff';
         $_SESSION['status'] = 'login';
-        header('location:staff/staff.php');
+        header('location:staff/');
     }
 } else {
     header('location:../index.php?pesan=gagal');
