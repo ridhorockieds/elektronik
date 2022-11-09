@@ -2,15 +2,16 @@
 ###############           Aplikasi Toko Elektronik            ###############
 
 <---------------------------------------------------------------------------->
-=============    User Interface Sistem Toko Elektronik    =============
+=============    Menu Sistem Toko Elektronik    =============
 
-#CRUD pada Admin terdapat 4 menu : 
+#CRUD pada Admin terdapat 5 menu : 
 1. Dashboard,
 2. Master Suplier,
 3. Master Barang,
 4. Master User,
+5. Penjualan (tahap pengembangan)
 
-#CRUD pada Staff terdapat 3 menu :
+#CRUD pada Staff terdapat 4 menu :
 1. Dashboard,
 2. Master Sistem,
 3. Master Barang,
@@ -18,7 +19,7 @@
 
 
 <---------------------------------------------------------------------------->
-=============    Folder    =============
+=============    Folderisasi/Bootstraping    =============
 Folder /assets berisi file aset seperti css, js dan img.
 Folder /Config berisi koneksi ke database MySQL.
 Folder /db berisi query/file sql beserta record.
