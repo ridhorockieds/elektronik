@@ -10,12 +10,14 @@
 3. Master Barang,
 4. Master User,
 5. Penjualan (tahap pengembangan)
+Keterangan : Admin memiliki semua akses CRUD ke database.
 
 #CRUD pada Staff terdapat 4 menu :
 1. Dashboard,
 2. Master Sistem,
 3. Master Barang,
 4. Penjualan (tahap pengembangan)
+Keterangan : Staff tidak memiliki akses CRUD pada table user.
 
 
 <---------------------------------------------------------------------------->

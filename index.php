@@ -61,9 +61,11 @@ if (isset($_GET['pesan'])) {
                         <div class="col-12">
                             <button type="submit" class="btn btn-primary btn-block">Login</button>
                         </div>
-                        <!-- /.col -->
                     </div>
                 </form>
+                <div class="social-auth-links text-center mb-3">
+                    <a href="read-me.txt" class="btn btn-block btn-secondary">Dokumentasi</a>
+                </div>
             </div>
             <!-- /.login-card-body -->
         </div>
